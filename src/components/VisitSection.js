@@ -1,11 +1,19 @@
 import React from 'react'
-const VisitSection = () => {
+import './VisitSection.css'
+
+function VisitSection() {
   return (
-    <div className="visit">
-        <h1>Alfred Kubin Museum of Art: </h1>
-        <p>A World of Unease and Fantasy</p>
+    <div id='visitSection' className='visit'>
+       <div className='visit-wrapper'>
+        <div className='visit-image'>
+                <img src='images/alfred-kubin.jpg' alt='/' />
+            </div>
+            <div className='visit-text'>
+                Alfred Kubin Museum of Art: A World of Unease and Fantasy
+                </div>
+       </div>
     </div>
-  );
-};
+  )
+}
 
 export default VisitSection

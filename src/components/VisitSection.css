@@ -1,8 +1,26 @@
 .visit{
-    background-color: bisque;
-    margin: 4rem 6rem;
+    background-color: #E7E8D1;
 }
 
-.visit >h1 {
-    font-size: 3rem;
+.visit-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
 }
+
+.visit-text{
+    width: 55%;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 1px 1px #242424;
+    color: #B85042;
+}
+.visit-image{
+    scale: 0.85;
+}
+
+

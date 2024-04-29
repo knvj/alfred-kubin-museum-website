@@ -5,6 +5,14 @@ import { faLandmarkDome, faXmark, faBars} from '@fortawesome/free-solid-svg-icon
 import { Button } from './Button';
 import './Navbar.css';
 function Navbar() {
+
+    const scrollToSection = (sectionId) => {
+      const section = document.getElementById(sectionId);
+      if(section){
+        section.scrollIntoView({behavior: 'smooth', block: 'start'})
+      }
+    }
+
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
     const handleClick = () => setClick(!click);
@@ -28,9 +36,9 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <div className="navbar-logo" onClick={closeMobileMenu}>
           <FontAwesomeIcon icon={faLandmarkDome}/> THE KET
-          </Link>
+          </div>
           <div className='menu-icon' onClick={handleClick}>
           {click ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
           </div>
@@ -39,24 +47,24 @@ function Navbar() {
 
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                <div className='nav-links' onClick={() => {scrollToSection('visitSection'); closeMobileMenu();}}>
                     Visit
-                </Link>
+                </div>
             </li>
             <li className='nav-item'>
-                <Link to='/events' className='nav-links' onClick={closeMobileMenu}>
+                <div className='nav-links' onClick={() => { scrollToSection('exhibitionSection'); closeMobileMenu(); }}>
                     Exhibitions and Events
-                </Link>
+                </div>
             </li>
             <li className='nav-item'>
-                <Link to='/learn' className='nav-links' onClick={closeMobileMenu}>
+                <div className='nav-links' onClick={closeMobileMenu}>
                     Learn with us
-                </Link>
+                </div>
             </li>
             <li className='nav-item'>
-                <Link to='/shop' className='nav-links-mobile' onClick={closeMobileMenu}>
+                <div className='nav-links-mobile' onClick={closeMobileMenu}>
                     Buy tickets
-                </Link>
+                </div>
             </li>
           </ul>
 

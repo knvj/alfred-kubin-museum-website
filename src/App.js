@@ -1,19 +1,16 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './components/pages/Home'
+import HeroSection from './components/HeroSection';
+import Cards from './components/Cards';
 import VisitSection from './components/VisitSection';
 
 function App() {
   return (
     <>
-    <Router>
       <Navbar />
-      <Routes>
-        <Route path='/' exact element={<Home/>}> </Route>
-      </Routes>
-    </Router>
-    <VisitSection />
+      <HeroSection />
+      <VisitSection />
+      <Cards />
     </>
 
   );
