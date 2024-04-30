@@ -1,26 +1,40 @@
-.visit{
-    background-color: #E7E8D1;
+.visit {
+    margin: 4rem 6rem;
+    background-color: #fff;
 }
-
 .visit-wrapper{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1120px;
-    width: 90%;
-    margin: 0 auto;
-}
+    margin-top:2rem;
 
+}
 .visit-text{
-    width: 55%;
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: 1px 1px #242424;
-    color: #B85042;
+    width: 35%;
+    text-align: left;
+    font-size: 1.1rem;
 }
 .visit-image{
-    scale: 0.85;
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
 }
-
-
+.visit-image img{
+    width: 49%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0,0,0,0.19);
+}
+.visit-image img:nth-child(2){
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
+@media screen and (max-width: 1024px) {
+    .visit{
+        margin: 4rem 2rem;
+    }
+}
