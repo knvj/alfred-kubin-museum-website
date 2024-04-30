@@ -1,25 +1,28 @@
 .visit {
-    margin: 4rem 6rem;
-    background-color: #fff;
+    height: 600px;
+    background-color: #E7E8D1;
 }
 .visit-wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top:2rem;
-
 }
 .visit-text{
-    width: 35%;
-    text-align: left;
-    font-size: 1.1rem;
+    text-shadow: 1px 1px #242424;
+    color: #B85042;
+    text-align: center;
+    width: 45%;
+    text-align: center;
+}
+.visit-text > h1 {
+    font-size: 2.3rem;
 }
 .visit-image{
     position: relative;
-    width: 80%;
+    width: 55%;
     display: flex;
     justify-content: space-between;
-    z-index: 99;
 }
 .visit-image img{
     width: 49%;
@@ -34,7 +37,18 @@
     right: 0;
 }
 @media screen and (max-width: 1024px) {
-    .visit{
-        margin: 4rem 2rem;
+    .visit-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .visit-text{
+        width: 100%;
+    }
+    .visit-text > h1{
+        font-size: 1.5rem;
+    }
+    .visit-image{
+        width: 90%;
+        margin: 1.8rem 0;
     }
 }
