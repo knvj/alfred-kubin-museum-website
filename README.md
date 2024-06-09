@@ -2,7 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Database
+
+Database created with MongoDB
+
 ## Available Scripts
+
+Is the server, you can run:
+
+### 'nodemon server'
 
 In the project directory, you can run:
 
