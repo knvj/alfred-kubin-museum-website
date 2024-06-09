@@ -10,7 +10,7 @@ Database created with MongoDB
 
 Is the server, you can run:
 
-### 'nodemon server'
+### `nodemon server`
 
 In the project directory, you can run:
 
