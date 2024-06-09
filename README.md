@@ -1,8 +1,20 @@
-# Getting Started with Create React App
+# Opis aplikacji
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projekt Alfred Kubin - Museum of Art Website (Projektowanie witryn internetowych)
 
-# Database
+Landing page dla strony internetowej dotyczącej muzeum sztuki nazwanej po austriackim ilustratorze Alfredzie Kubinie.
+Statyczna część składa się z nawigacyjnego menu pozwalającego na przekierowanie do odpowiedniej sekcji strony dzięki,
+zachowaniu zasady SPA (Single Page Application). Strona zawiera liczne treści oraz grafiki, które są skompensowane
+w sposób intuicyjny dla użytkownika. Projekt wykonany jest w oparciu o biblioteke React, serwer Node oraz baze danych MongoDB.
+Strona jest w pełni responsywna.
+
+Statyczna strona jest główną stroną, którą otrzymujemy włączeniu projektu, w dynamiczną część strony wchodzimy przez przycisk
+"**Plan your visit**" - znajdującej się w głównej części widocznej dla użytkownika.
+
+Dynamiczna częśc strony przedstawia wydarzenia, które mają odbyć się lub aktualnie się odbywają w bieżącym roku.
+Aplikacja pobiera informacje zawarte w bazie danych przez endpoint i wyświetla je w odrębnych sekcjach dla każdego wydarzenia.
+
+## Database
 
 Database created with MongoDB
 
