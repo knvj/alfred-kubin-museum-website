@@ -11,7 +11,7 @@ Strona jest w pełni responsywna.
 Statyczna strona jest główną stroną, którą otrzymujemy włączeniu projektu, w dynamiczną część strony wchodzimy przez przycisk
 "**Plan your visit**" - znajdującej się w głównej części widocznej dla użytkownika.
 
-Dynamiczna częśc strony przedstawia wydarzenia, które mają odbyć się lub aktualnie się odbywają w bieżącym roku.
+Dynamiczna część strony przedstawia wydarzenia, które mają odbyć się lub aktualnie się odbywają w bieżącym roku.
 Aplikacja pobiera informacje zawarte w bazie danych przez endpoint i wyświetla je w odrębnych sekcjach dla każdego wydarzenia.
 
 ## Database
