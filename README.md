@@ -3,7 +3,7 @@
 Projekt Alfred Kubin - Museum of Art Website (Projektowanie witryn internetowych)
 
 Landing page dla strony internetowej dotyczącej muzeum sztuki nazwanej po austriackim ilustratorze Alfredzie Kubinie.
-Statyczna część składa się z nawigacyjnego menu pozwalającego na przekierowanie do odpowiedniej sekcji strony dzięki,
+Statyczna część składa się z nawigacyjnego menu pozwalającego na przekierowanie do odpowiedniej sekcji strony dzięki
 zachowaniu zasady SPA (Single Page Application). Strona zawiera liczne treści oraz grafiki, które są skompensowane
 w sposób intuicyjny dla użytkownika. Projekt wykonany jest w oparciu o biblioteke React, serwer Node oraz baze danych MongoDB.
 Strona jest w pełni responsywna.
